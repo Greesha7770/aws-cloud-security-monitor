@@ -1,0 +1,44 @@
+{
+  "version": "0",
+  "id": "test-sg-event-1234",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.ec2",
+  "account": "123456789012",
+  "time": "2025-01-15T14:00:00Z",
+  "region": "us-east-1",
+  "detail": {
+    "eventVersion": "1.08",
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDACKCEVSQ6C2EXAMPLE",
+      "arn": "arn:aws:iam::123456789012:user/test-admin",
+      "accountId": "123456789012",
+      "userName": "test-admin"
+    },
+    "eventTime": "2025-01-15T14:00:00Z",
+    "eventSource": "ec2.amazonaws.com",
+    "eventName": "AuthorizeSecurityGroupIngress",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "203.0.113.50",
+    "requestParameters": {
+      "groupId": "sg-test12345",
+      "ipPermissions": {
+        "items": [
+          {
+            "ipProtocol": "tcp",
+            "fromPort": 22,
+            "toPort": 22,
+            "ipRanges": {
+              "items": [{"cidrIp": "0.0.0.0/0"}]
+            },
+            "ipv6Ranges": {
+              "items": []
+            }
+          }
+        ]
+      }
+    },
+    "responseElements": {"requestId": "test-req-123", "_return": true},
+    "eventID": "test-sg-event-id-5678"
+  }
+}

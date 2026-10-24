@@ -1,0 +1,35 @@
+{
+  "version": "0",
+  "id": "12345678-test-test-test-123456789012",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.iam",
+  "account": "123456789012",
+  "time": "2025-01-15T10:30:00Z",
+  "region": "us-east-1",
+  "detail": {
+    "eventVersion": "1.08",
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDACKCEVSQ6C2EXAMPLE",
+      "arn": "arn:aws:iam::123456789012:user/test-admin",
+      "accountId": "123456789012",
+      "userName": "test-admin"
+    },
+    "eventTime": "2025-01-15T10:30:00Z",
+    "eventSource": "iam.amazonaws.com",
+    "eventName": "CreateUser",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "203.0.113.50",
+    "requestParameters": {
+      "userName": "suspicious-new-user"
+    },
+    "responseElements": {
+      "user": {
+        "userName": "suspicious-new-user",
+        "userId": "AIDACKCEVSQ6C2EXAMPLE2",
+        "arn": "arn:aws:iam::123456789012:user/suspicious-new-user"
+      }
+    },
+    "eventID": "test-event-id-12345678"
+  }
+}

@@ -1,0 +1,9 @@
+aws_region         = "us-east-1"
+project_name       = "cloud-security-monitor"
+environment        = "dev"
+alert_email        = "grishmasathe.scoe.entc@gmail.com"
+log_retention_days = 14
+lambda_timeout     = 30
+lambda_memory      = 128
+lambda_log_level   = "INFO"
+enable_cloudtrail  = true
